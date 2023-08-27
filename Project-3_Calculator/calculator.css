@@ -1,0 +1,53 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/* calculator.css */
+
+.text-center {
+    text-align: center;
+}
+
+
+.container {
+    background-color:rgb(146, 15, 146);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  max-width: 40vw;
+}
+
+.row {
+    display: flex;
+    gap: 5px; /* Adjust the gap as needed */
+}
+.row .input{
+    margin: 15px 20px;
+padding: 10px;
+    border: 12px solid rgb(50, 250, 50);
+    border-radius: 3px;
+}
+
+.button {
+    /* Your button styles here */
+    width: 65px;
+    padding: 10px 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.button:active{
+    background-color: yellowgreen;
+    
+}
+
+.input:focus{
+    background-color: black;
+    color: white;
+}
+

@@ -1,0 +1,575 @@
+html{
+  font-size: 80%;
+ 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(26, 26, 112);
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  font-size: 20px;
+  background-color: rgb(135, 199, 245);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0px 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(10, 10, 124);
+}
+
+nav ul li a:hover {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.left {
+  font-size: 1.8rem;
+}
+
+/* main section */
+
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0;
+  align-items: center;
+}
+
+.firstsection>div {
+  width: 30%;
+  margin: 50px 0;
+}
+
+.leftsection {
+  /* background-color: red; */
+  font-size: 2.2rem;
+  color: white;
+}
+
+.rightsection img {
+  width: 70%;
+  margin: 35px 0;
+  border: 2px solid red;
+  box-shadow: 0rem 0.8rem 1.5rem white;
+}
+
+main hr {
+  border: 0;
+  background: skyblue;
+  height: 1.2px;
+  margin: 40px 80px;
+}
+
+#element {
+  color: red;
+}
+
+.afterfirst {
+  font-size: 2.2rem;
+  color: white;
+  margin: 35px 110px;
+
+  max-width: 80vw;
+  color: white;
+  margin: auto;
+}
+
+.afterfirst button {
+  font-size: 1.2rem;
+  align-items: center;
+  width: 175px;
+  border: 5px solid red;
+  color: darkblue;
+  border-radius: 30px;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.afterfirst button:hover {
+  box-shadow: 0rem 0.8rem 1.5rem white;
+  font-weight: bold;
+}
+
+.small {
+  color: rgb(163, 155, 155);
+  margin-left: 30px;
+  font-size: 1.2rem;
+}
+
+.afterfirst h1 {
+  font-size: 2.5rem;
+  margin-left: 30px;
+}
+
+.secondsection {
+  max-width: 80vw;
+  color: white;
+  margin: auto;
+  height: 80vh;
+}
+
+.secondsection h1 {
+  font-size: 2.5rem;
+  margin-left: 30px;
+
+}
+
+.gray {
+  color: rgb(163, 155, 155);
+  margin-left: 30px;
+
+}
+
+.secondsection .box {
+ 
+  background-color: white;
+  font-size: 2rem;
+  color: black;
+  margin: 56px 0px;
+  display: flex;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.4rem;
+  min-width: 400px;
+}
+
+
+.content-table thead tr th {
+  padding: 20px 50px;
+  margin: 0 30px;
+}
+
+.Projects {
+  height: 110vh;
+  margin-top: 30px;
+}
+
+.smallletter {
+  margin-left: 165px;
+  color: rgb(149, 143, 143);
+}
+
+h2 {
+  margin-top: 0;
+  margin-left: 165px;
+  color: white;
+  font-size: 2.5rem;
+  /* border: 2px solid red; */
+}
+
+.content-table tbody td {
+  font-size: 1.2rem;
+  padding: 20px 70px;
+  margin: 10px 30px;
+}
+
+.flip-card {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/* Style for the Projects section */
+section.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-around;
+  /* Adjust as needed */
+}
+
+/* Style for each flip card */
+.flip-card {
+  width: 400px;
+  /* margin-bottom: 20px; */
+  margin: 20px 30px;
+}
+
+/* Style for the card inner container */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+/* Style for the card front side */
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style for the card back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Hover effect to flip the card */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card p {
+  color: darkblue;
+  margin: 20px;
+}
+
+
+
+/* FOOTER SECTION */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  color: white;
+}
+
+footer img {
+  width: 25px;
+  height: 35px;
+}
+
+footer button {
+  width: 160px;
+  color: blue;
+  background-color: white;
+  border: 5px solid red;
+  border-radius: 5px;
+
+}
+
+/* RESUME SECTION */
+
+.resume {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  /* You can adjust this height as needed */
+}
+
+.resume h1 {
+  margin-top: 0px;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.button-container {
+  margin-top: 20px;
+  /* Adjust the spacing between buttons and heading */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.download-btn img{
+  width: 40px ;
+  height: 15px;
+  margin-left: 10px;
+}
+
+.github-btn img {
+  vertical-align: middle;
+  height: 20px;
+  /* Adjust the image height as needed */
+  margin-right: 5px;
+  /* Add some spacing between the image and text */
+}
+
+
+
+/* contact section */
+.con {
+  height: 35vh;
+  margin: 20px 150px;
+}
+
+.contact h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0px 150px;
+  text-align: center;
+ 
+}
+
+.contact .g {
+  color: rgb(181, 175, 175);
+  margin: 10px 150px;
+  text-align: center;
+}
+
+/* .co */
+
+
+.contact img {
+  height: 50px;
+  width: 50px;
+
+}
+
+.contact .con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact .btn {
+  margin-top: 30px;
+  margin-right: 10px;
+  color: black;
+  border: none;
+  height: 100px;
+  width: 160px;
+  background-color: skyblue;
+  padding: 0;
+  border: 5px solid red;
+}
+
+footer{
+  font-size: 2rem;
+  color: red;
+}
+
+footer:hover{
+  cursor: pointer;
+  color: black;
+}
+
+
+/* Media query for screens with a max width of 768px */
+/* Add this media query at the end of your existing CSS */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgb(135, 199, 245);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: none;
+  }
+  
+  nav ul.active {
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0;
+    padding: 10px 30px;
+  }
+  
+  nav ul li a {
+    color: rgb(10, 10, 124);
+  }
+  
+  main hr {
+    display: none;
+  }
+
+  .secondsection .gray{
+    margin-top: 30px;
+    margin-left: 100px;
+  }
+
+  .secondsection h1{
+    margin: 5px 100px;
+  }
+  .secondsection{
+    margin-left: 0;
+  }
+  
+  .secondsection .box{
+    box-shadow: none;
+  }
+  .box {
+    
+    width: 100%;
+    margin: 0 auto;
+    background-color: navy;
+  }
+  
+  .box table {
+    font-size: 1rem;
+  }
+
+  .secondsection .box{
+    margin: 10px 20px;
+    background-color: rgb(26, 26, 112);
+  
+  }
+  .content-table{
+    height: 45vh;
+    width:40vw;
+    margin-left: 32px;
+    margin-right: 8px;
+    background-color: rgb(240, 240, 255);
+    color: rgb(55, 33, 217);
+  
+  }
+  
+  .content-table tr{
+    margin: auto
+  }
+  .content-table thead{
+    margin: auto;
+  }
+  .content-table thead th{
+    margin: 0px 0px;
+  }
+  .content-table tbody td {
+    margin-left: 0px;
+    padding: 10px 0px;
+    margin: 5px 0px;
+  }
+  
+  .smallletter{
+  margin: 10px 120px;
+  }
+  h2{
+    margin-top: 10px;
+    margin-left: 120px;
+  }
+  section.Projects {
+    height: auto;
+    margin: 30px; }
+  
+  .Projects .flip-card {
+    width: 100%;
+    margin: 20px 100px;
+  }
+  
+  .resume {
+    height: auto;
+  }
+  
+  .contact {
+    height: auto;
+    margin-top: 70px;
+    }
+  
+    .con{
+      width:95vw;
+    }
+  .contact .con {
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 20px;
+  }
+  
+  .contact .btn {
+    margin: 10px 20px;
+    width: 100px;
+  }
+  .flip-card-front {
+background-color: rgb(26, 26, 112);
+  }
+
+  .flip-card-front img{
+    height: 300px;
+    margin-left: 40px;
+    width: 500px;
+  }
+
+
+  .flip-card {
+
+    width: 100%; /* Make each card take the full width */
+    margin-bottom: 20px; /* Add some space between stacked cards */
+  }
+  
+  .flip-card-inner {
+    width: 85%; /* Make the inner content take the full width */
+    height: auto; /* Allow inner content to determine height */
+  }
+
+footer{
+  font-size: 1.5rem;
+}
+}
+
